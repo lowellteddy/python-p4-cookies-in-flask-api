@@ -1,5 +1,7 @@
 from flask import Flask, request, session, jsonify, make_response
 
+
+# Initialize Flask app and set configuration
 app = Flask(__name__)
 app.json.compact = False
 
@@ -27,4 +29,3 @@ def show_session(key):
 
 if __name__ == '__main__':
     app.run(port=5555)
-    
